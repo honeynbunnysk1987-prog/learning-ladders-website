@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-baloo: "Baloo 2", system-ui, sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-ink font-body antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #FBBF24;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.section-eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full bg-sunshine-100 px-4 py-1.5 text-sm font-bold uppercase tracking-wide text-royal-700;
+}
+
+.rung-card {
+  @apply rounded-rung bg-white shadow-soft transition-all duration-300;
+}
+.rung-card:hover {
+  @apply shadow-soft-lg -translate-y-1;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-royal px-6 py-3.5 font-display font-semibold text-white shadow-soft transition-all duration-200 hover:bg-royal-700 hover:shadow-soft-lg active:scale-95;
+}
+.btn-accent {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-sunshine px-6 py-3.5 font-display font-semibold text-royal-900 shadow-soft transition-all duration-200 hover:bg-sunshine-600 hover:shadow-soft-lg active:scale-95;
+}
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-royal px-6 py-3.5 font-display font-semibold text-royal transition-all duration-200 hover:bg-royal hover:text-white active:scale-95;
+}
+.btn-leaf {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-leaf px-6 py-3.5 font-display font-semibold text-white shadow-soft transition-all duration-200 hover:bg-leaf-700 hover:shadow-soft-lg active:scale-95;
+}
+
+/* ladder-rail scroll signature element */
+.ladder-rail {
+  position: fixed;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 40vh;
+  z-index: 40;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .ladder-rail { display: block; }
+}
+.ladder-rail-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #DBEAFE;
+}
+.ladder-rail-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #16A34A 0%, #FBBF24 50%, #1E3A8A 100%);
+  transition: height 0.1s linear;
+}
+
+input, textarea, select {
+  @apply w-full rounded-xl border border-royal-100 bg-white px-4 py-3 text-ink placeholder:text-slate-400 focus:border-royal focus:outline-none;
+}
