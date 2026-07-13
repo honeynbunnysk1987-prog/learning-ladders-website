@@ -45,7 +45,7 @@ export default function AboutPage() {
         <div className="container-page grid items-center gap-10 md:grid-cols-[280px_1fr]">
           <div className="relative mx-auto aspect-square w-56 overflow-hidden rounded-rung shadow-soft-lg md:w-full">
             <Image
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80"
+              src="https://oizixapcsvjnupmqvrgk.supabase.co/storage/v1/object/public/gallery/fd9b83bd-dfc6-4743-8938-83ede8a54ca6/1783577630500-Wh"
               alt="Principal of Learning Ladders Preprimary School"
               fill
               className="object-cover"
@@ -54,13 +54,13 @@ export default function AboutPage() {
           <div>
             <Quote className="h-8 w-8 text-sunshine" />
             <p className="mt-3 text-lg leading-relaxed text-royal-900/80">
-              &ldquo;Every child who walks through our doors carries a world of potential. Our job
-              isn&apos;t to fill that potential with instructions — it&apos;s to protect the
-              curiosity they already have, and give it room to grow. That&apos;s the promise we
-              make to every family who joins Learning Ladders.&rdquo;
+              &ldquo;I started Learning Ladders with a simple belief
+              &mdash; that every child deserves a joyful, caring place to begin. Here, we don&apos;t rush childhood; we nurture it.
+              We help each little one feel safe, loved, and confident to take their very
+              first steps toward a bright future.&rdquo;
             </p>
-            <p className="mt-4 font-display text-lg font-bold text-royal-900">Mrs. Ananya Rao</p>
-            <p className="text-sm text-royal-900/60">Principal, Learning Ladders Preprimary School</p>
+            <p className="mt-4 font-display text-lg font-bold text-royal-900">Mrs. Neelapu Usha</p>
+            <p className="text-sm text-royal-900/60">Founder & Principal · B.Com (Comp) B.Ed</p>
           </div>
         </div>
       </section>
