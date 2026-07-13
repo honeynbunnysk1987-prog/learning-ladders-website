@@ -45,10 +45,10 @@ export default function AboutPage() {
         <div className="container-page grid items-center gap-10 md:grid-cols-[280px_1fr]">
           <div className="relative mx-auto aspect-square w-56 overflow-hidden rounded-rung shadow-soft-lg md:w-full">
             <Image
-              src="https://oizixapcsvjnupmqvrgk.supabase.co/storage/v1/object/public/gallery/fd9b83bd-dfc6-4743-8938-83ede8a54ca6/1783577630500-Wh"
+              src="https://oizixapcsvjnupmqvrgk.supabase.co/storage/v1/object/public/gallery/fd9b83bd-dfc6-4743-8938-83ede8a54ca6/1783577630500-WhatsApp-Image-2026-07-07-at-5.01.02-PM.jpeg"
               alt="Principal of Learning Ladders Preprimary School"
               fill
-              className="object-cover"
+              className="object-cover" unoptimized
             />
           </div>
           <div>
